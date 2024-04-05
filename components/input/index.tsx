@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     paddingLeft: 50,
     fontFamily: FontEnum["Satoshi-Bold"],
     fontSize: 18,
-    marginTop: 2,
+    marginTop: 5,
   },
   inputContainer: {
     display: "flex",

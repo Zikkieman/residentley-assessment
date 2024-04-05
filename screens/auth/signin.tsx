@@ -16,13 +16,12 @@ import { useNavigation } from "@react-navigation/native";
 
 import { NavigationHook } from "../../redux/features/interface";
 import { SignUpSchema } from "../../models/yup-schema/signinSchema";
-// import Lock from "../../components/svg/lock";
 import Message from "../../components/svg/message";
 import Logo from "../../components/svg/logo";
 import { TextInput } from "../../components/input";
 
 const Signin = () => {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
   const navigation = useNavigation<NavigationHook>();
 
   const onSubmit = async () => {
@@ -144,7 +143,7 @@ const Signin = () => {
                       className="absolute right-5"
                     >
                       <Feather
-                        name={showPassword ? "eye" : "eye-off"}
+                        name={showPassword ? "eye-off" : "eye"}
                         size={24}
                         color="#6E717C"
                       />
