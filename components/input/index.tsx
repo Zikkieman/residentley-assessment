@@ -126,5 +126,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    overflow: "hidden",
   },
 });
